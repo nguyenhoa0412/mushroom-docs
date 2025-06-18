@@ -1,0 +1,28 @@
+##########
+ language
+##########
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+
+   -  -  Type
+      -  string
+   -  -  Required
+      -  No
+   -  -  Default
+      -  Any
+   -  -  Validation
+      -  enum: `Any`, `IIS`, `Tomcat`, `JBoss`, `HttpServer`
+
+Specify the web server will host the mushroom api project.
+
+**Example:**
+
+.. code:: javascript
+
+   {
+       "$schema": "https://schema.siten.vn/mushroom/project-fragment.json",
+       "server": "IIS",
+       ...
+   }
